@@ -23,6 +23,7 @@ public class MemberRepositoryV0 {
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1, member.getMemberId());
             pstmt.setInt(2, member.getMoney());
+            pstmt.executeUpdate();
             return member;
         } catch (SQLException e) {
             log.error("db error", e);
@@ -33,6 +34,13 @@ public class MemberRepositoryV0 {
     }
 
     private void close(Connection con, Statement stmt, ResultSet rs){
+        if(rs != null){
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                log.info("error",e);
+            }
+        }
         if(stmt != null) {
             try {
                 stmt.close();
