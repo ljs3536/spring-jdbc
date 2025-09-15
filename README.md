@@ -20,3 +20,5 @@ JDBC개발 - 수정,삭제
 정리 / 커넥션 풀 이해
 # 2025-09-13
 DataSource이해 / DataSource예제1 - DriverManager
+# 2025-09-15
+DataSource 예제2 - 커넥션 풀
