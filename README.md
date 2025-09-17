@@ -24,3 +24,5 @@ DataSource이해 / DataSource예제1 - DriverManager
 DataSource 예제2 - 커넥션 풀
 # 2025-09-16
 DataSource 적용
+# 2025-09-17
+정리 / 트랜잭션 - 개념 이해 / 데이터베이스 연결 구조와 DB 세션
